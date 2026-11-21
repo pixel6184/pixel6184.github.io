@@ -1,0 +1,1455 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1024｜视频内容品牌官网_原创高清精品影像平台</title>
+<meta name="description" content="1024官方网站是聚焦原创高清影像的视频内容品牌，为创作者与企业搭建高品质内容生态，持续运营专题企划、创作者社区与精品影像发布。">
+<meta name="keywords" content="1024,1024官网,1024官方网站,视频品牌,原创影像,内容生态">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111a2b'/%3E%3Cpath d='M24 18l22 14-22 14z' fill='%2300e0a8'/%3E%3Ccircle cx='19' cy='32' r='4' fill='%23ff6b4a'/%3E%3C/svg%3E">
+<style>
+:root{
+  --c-bg:#0d1220;
+  --c-bg2:#131a2c;
+  --c-card:#182137;
+  --c-line:rgba(255,255,255,.09);
+  --c-txt:#e8edf7;
+  --c-sub:#9aa8c2;
+  --c-acc:#00e0a8;
+  --c-acc2:#ff6b4a;
+  --c-blue:#4d8dff;
+  --r:16px;
+  --maxw:1180px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:112px}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  background:var(--c-bg);color:var(--c-txt);line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul{list-style:none}
+.v1024-wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+
+/* ===== 公告条 + 页头 吸顶 ===== */
+.v1024-stickyhead{position:sticky;top:0;z-index:90}
+.v1024-notice{
+  background:linear-gradient(90deg,#0a4f3f,#0f7a5f 45%,#0a4f3f);
+  color:#d8fff4;font-size:13px;letter-spacing:.2px;
+}
+.v1024-notice-inner{
+  max-width:var(--maxw);margin:0 auto;padding:9px 22px;
+  display:flex;align-items:center;gap:12px;overflow:hidden;
+}
+.v1024-notice-tag{
+  flex:none;background:#00e0a8;color:#063026;font-weight:700;
+  font-size:11px;padding:2px 8px;border-radius:4px;letter-spacing:1px;
+}
+.v1024-notice-track{overflow:hidden;flex:1;white-space:nowrap;text-overflow:ellipsis}
+.v1024-notice-track b{color:#fff;font-weight:600}
+.v1024-notice-close{flex:none;color:#bff7e7;font-size:16px;line-height:1;padding:0 2px;opacity:.8}
+.v1024-notice-close:hover{opacity:1;color:#fff}
+
+.v1024-header{
+  background:rgba(13,18,32,.88);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--c-line);
+}
+.v1024-head-inner{
+  max-width:var(--maxw);margin:0 auto;padding:0 22px;
+  height:66px;display:flex;align-items:center;gap:20px;
+}
+.v1024-logo{display:flex;align-items:center;gap:10px;flex:none}
+.v1024-logo-mark{
+  width:36px;height:36px;border-radius:10px;position:relative;
+  background:linear-gradient(140deg,#00e0a8,#1794ff);
+  display:grid;place-items:center;
+  box-shadow:0 4px 16px rgba(0,224,168,.28);
+}
+.v1024-logo-mark::after{
+  content:"";width:0;height:0;border-left:11px solid #071b18;
+  border-top:7px solid transparent;border-bottom:7px solid transparent;margin-left:3px;
+}
+.v1024-logo-txt{font-size:19px;font-weight:800;letter-spacing:.5px}
+.v1024-logo-txt em{font-style:normal;color:var(--c-acc);font-size:12px;font-weight:600;margin-left:6px;letter-spacing:1px;vertical-align:2px}
+.v1024-nav{display:flex;gap:4px;flex:1;min-width:0}
+.v1024-nav a{
+  font-size:14px;color:var(--c-sub);padding:8px 12px;border-radius:8px;
+  transition:.2s;white-space:nowrap;
+}
+.v1024-nav a:hover,.v1024-nav a.is-active{color:#fff;background:rgba(255,255,255,.07)}
+.v1024-head-tools{display:flex;align-items:center;gap:10px;flex:none}
+.v1024-search{
+  display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.06);
+  border:1px solid var(--c-line);border-radius:10px;padding:6px 10px;
+  transition:.2s;
+}
+.v1024-search:focus-within{border-color:var(--c-acc);background:rgba(0,224,168,.07)}
+.v1024-search svg{flex:none;opacity:.6}
+.v1024-search input{
+  background:none;border:none;outline:none;color:var(--c-txt);
+  font-size:13px;width:130px;
+}
+.v1024-search input::placeholder{color:#6c7a94}
+.v1024-btn-acc{
+  background:linear-gradient(120deg,#00e0a8,#1bb8ff);color:#04231d;
+  font-weight:700;font-size:13.5px;padding:9px 18px;border-radius:10px;
+  transition:.2s;
+}
+.v1024-btn-acc:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.v1024-burger{display:none;width:40px;height:40px;border-radius:9px;background:rgba(255,255,255,.06);flex-direction:column;justify-content:center;align-items:center;gap:5px}
+.v1024-burger span{width:18px;height:2px;background:#dfe7f5;border-radius:2px;transition:.25s}
+.v1024-burger.is-open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.v1024-burger.is-open span:nth-child(2){opacity:0}
+.v1024-burger.is-open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* ===== 首屏 ===== */
+.v1024-hero{position:relative;overflow:hidden;padding:64px 0 56px}
+.v1024-hero::before{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(60% 55% at 82% 12%,rgba(0,224,168,.16),transparent 65%),
+    radial-gradient(50% 50% at 8% 78%,rgba(77,141,255,.15),transparent 68%);
+  pointer-events:none;
+}
+.v1024-hero-grid{position:relative;display:grid;grid-template-columns:1.05fr 1fr;gap:46px;align-items:center}
+.v1024-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:1.6px;
+  color:var(--c-acc);border:1px solid rgba(0,224,168,.35);border-radius:999px;
+  padding:5px 14px;margin-bottom:20px;
+}
+.v1024-eyebrow i{width:6px;height:6px;border-radius:50%;background:var(--c-acc);box-shadow:0 0 10px var(--c-acc)}
+.v1024-h1{font-size:60px;line-height:1.08;font-weight:900;letter-spacing:-1px;margin-bottom:6px}
+.v1024-h1 span{background:linear-gradient(100deg,#00e0a8,#4db2ff 70%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.v1024-hero-sub{font-size:17px;color:#c3cfe3;font-weight:600;margin-bottom:16px}
+.v1024-hero-desc{font-size:14.5px;color:var(--c-sub);max-width:520px;margin-bottom:26px}
+.v1024-hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:34px}
+.v1024-btn-ghost{
+  border:1px solid rgba(255,255,255,.2);color:#e3ebf8;font-size:14px;
+  padding:10px 20px;border-radius:10px;transition:.2s;
+}
+.v1024-btn-ghost:hover{border-color:var(--c-acc);color:var(--c-acc);background:rgba(0,224,168,.06)}
+.v1024-stats{display:flex;gap:34px;flex-wrap:wrap}
+.v1024-stat b{display:block;font-size:26px;font-weight:900;color:#fff;letter-spacing:-.5px}
+.v1024-stat b i{font-style:normal;color:var(--c-acc);font-size:15px;margin-left:2px}
+.v1024-stat span{font-size:12.5px;color:#7f8daa;letter-spacing:.4px}
+
+/* 首屏主视觉 */
+.v1024-hero-visual{position:relative}
+.v1024-hero-frame{
+  border-radius:22px;overflow:hidden;border:1px solid rgba(255,255,255,.12);
+  box-shadow:0 30px 70px -30px rgba(0,0,0,.9);position:relative;
+}
+.v1024-hero-frame img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.v1024-hero-play{
+  position:absolute;inset:0;display:grid;place-items:center;cursor:pointer;
+}
+.v1024-hero-play i{
+  width:66px;height:66px;border-radius:50%;background:rgba(0,0,0,.4);
+  border:1.5px solid rgba(255,255,255,.75);display:grid;place-items:center;
+  backdrop-filter:blur(6px);transition:.25s;
+}
+.v1024-hero-play i::after{
+  content:"";width:0;height:0;border-left:17px solid #fff;
+  border-top:11px solid transparent;border-bottom:11px solid transparent;margin-left:5px;
+}
+.v1024-hero-play:hover i{transform:scale(1.08);background:rgba(0,224,168,.55);border-color:#00e0a8}
+.v1024-hero-float{
+  position:absolute;left:-18px;bottom:-18px;background:#101a2e;
+  border:1px solid var(--c-line);border-radius:14px;padding:12px 16px;
+  display:flex;align-items:center;gap:12px;box-shadow:0 18px 40px -18px #000;
+}
+.v1024-hero-float b{font-size:13px;display:block;color:#fff}
+.v1024-hero-float span{font-size:11.5px;color:#8494b0}
+.v1024-hero-float em{
+  width:38px;height:38px;border-radius:10px;display:grid;place-items:center;
+  background:rgba(255,107,74,.15);color:var(--c-acc2);font-style:normal;font-size:18px;font-weight:800;
+}
+
+/* ===== 通用小节 ===== */
+.v1024-sec{padding:70px 0;position:relative}
+.v1024-sec.alt{background:linear-gradient(180deg,#0b1020,#101728)}
+.v1024-sec-head{margin-bottom:34px;max-width:760px}
+.v1024-sec-kicker{
+  font-size:12px;letter-spacing:2.4px;color:var(--c-acc);font-weight:700;margin-bottom:10px;
+}
+.v1024-sec-kicker::before{content:"// ";color:var(--c-acc2)}
+.v1024-h2{font-size:31px;font-weight:800;letter-spacing:-.4px;line-height:1.3}
+.v1024-h2 small{display:block;font-size:14px;font-weight:400;color:var(--c-sub);letter-spacing:0;margin-top:8px;line-height:1.8}
+
+/* ===== 焦点内容 ===== */
+.v1024-focus-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:22px}
+.v1024-focus-main{
+  position:relative;border-radius:var(--r);overflow:hidden;
+  border:1px solid var(--c-line);
+}
+.v1024-focus-main img{width:100%;height:100%;min-height:400px;object-fit:cover;transition:.5s}
+.v1024-focus-main:hover img{transform:scale(1.04)}
+.v1024-focus-cover-mask{
+  position:absolute;inset:0;background:linear-gradient(180deg,transparent 32%,rgba(4,8,16,.94));
+}
+.v1024-focus-info{position:absolute;left:0;right:0;bottom:0;padding:26px}
+.v1024-badge{
+  display:inline-block;font-size:11px;font-weight:700;letter-spacing:1px;
+  background:var(--c-acc2);color:#26090a;padding:3px 9px;border-radius:5px;margin-bottom:10px;
+}
+.v1024-focus-info h3{font-size:23px;font-weight:800;line-height:1.32;margin-bottom:8px}
+.v1024-focus-info p{font-size:13.5px;color:#b3c0d6;margin-bottom:12px}
+.v1024-meta{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:#8fa0bd}
+.v1024-focus-side{display:grid;grid-template-rows:1fr 1fr;gap:22px}
+.v1024-mini{
+  display:flex;gap:14px;background:var(--c-card);border:1px solid var(--c-line);
+  border-radius:var(--r);overflow:hidden;padding:0;transition:.25s;
+}
+.v1024-mini:hover{border-color:rgba(0,224,168,.45);transform:translateY(-3px)}
+.v1024-mini-thumb{width:42%;flex:none;position:relative;overflow:hidden}
+.v1024-mini-thumb img{width:100%;height:100%;object-fit:cover;min-height:150px}
+.v1024-mini-thumb .v1024-vtag{
+  position:absolute;left:8px;top:8px;font-size:10px;background:rgba(0,0,0,.55);
+  color:#d6f9ee;padding:2px 7px;border-radius:4px;letter-spacing:.5px;backdrop-filter:blur(3px);
+}
+.v1024-mini-body{padding:16px 16px 16px 0;display:flex;flex-direction:column;justify-content:center;gap:6px}
+.v1024-mini-body h4{font-size:14.5px;font-weight:700;line-height:1.45}
+.v1024-mini-body p{font-size:12px;color:#8b9ab6;line-height:1.6}
+
+/* ===== 视频流 ===== */
+.v1024-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.v1024-tab{
+  font-size:13px;color:var(--c-sub);border:1px solid var(--c-line);
+  padding:7px 15px;border-radius:999px;transition:.2s;
+}
+.v1024-tab:hover{color:#fff;border-color:rgba(255,255,255,.3)}
+.v1024-tab.is-active{background:rgba(0,224,168,.13);color:var(--c-acc);border-color:rgba(0,224,168,.5)}
+.v1024-vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.v1024-card{
+  background:var(--c-card);border:1px solid var(--c-line);border-radius:var(--r);
+  overflow:hidden;transition:.28s;display:flex;flex-direction:column;
+}
+.v1024-card:hover{transform:translateY(-5px);border-color:rgba(0,224,168,.4);box-shadow:0 22px 46px -24px rgba(0,0,0,.9)}
+.v1024-thumb{position:relative;aspect-ratio:16/9;overflow:hidden}
+.v1024-thumb img{width:100%;height:100%;object-fit:cover;transition:.45s}
+.v1024-card:hover .v1024-thumb img{transform:scale(1.06)}
+.v1024-thumb-mask{position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.5))}
+.v1024-dur{position:absolute;right:9px;bottom:9px;font-size:11px;background:rgba(0,0,0,.72);padding:2px 7px;border-radius:4px;letter-spacing:.5px}
+.v1024-body{padding:15px 16px 16px;display:flex;flex-direction:column;gap:9px;flex:1}
+.v1024-body h3{font-size:15px;font-weight:700;line-height:1.45}
+.v1024-body p{font-size:12.5px;color:#8d9cb9;line-height:1.65;flex:1}
+.v1024-tagrow{display:flex;gap:6px;flex-wrap:wrap}
+.v1024-tag{font-size:11px;color:#8fe8cd;background:rgba(0,224,168,.1);padding:2px 8px;border-radius:4px}
+.v1024-tag.b{color:#a9c4ff;background:rgba(77,141,255,.13)}
+.v1024-tag.c{color:#ffb199;background:rgba(255,107,74,.14)}
+.v1024-cardfoot{display:flex;align-items:center;justify-content:space-between;gap:8px;padding-top:9px;border-top:1px solid rgba(255,255,255,.06)}
+.v1024-author-mini{display:flex;align-items:center;gap:7px;font-size:12px;color:#9dabc6;min-width:0}
+.v1024-avatar{
+  width:24px;height:24px;border-radius:50%;display:grid;place-items:center;
+  font-size:11px;font-weight:800;color:#04231d;flex:none;
+  background:linear-gradient(135deg,#00e0a8,#5ad1ff);
+}
+.v1024-avatar.v2{background:linear-gradient(135deg,#ff6b4a,#ffc46b);color:#2a1009}
+.v1024-avatar.v3{background:linear-gradient(135deg,#8f7bff,#b8a5ff);color:#1b1440}
+.v1024-avatar.v4{background:linear-gradient(135deg,#4d8dff,#7fd6ff);color:#06172e}
+.v1024-avatar.v5{background:linear-gradient(135deg,#ff8fb1,#ffd0dc);color:#3a0f1e}
+.v1024-cardacts{display:flex;gap:4px;flex:none}
+.v1024-iconbtn{
+  font-size:11.5px;color:#8fa0bd;padding:4px 7px;border-radius:6px;transition:.2s;white-space:nowrap;
+}
+.v1024-iconbtn:hover{background:rgba(255,255,255,.08);color:#fff}
+.v1024-iconbtn.is-liked{color:var(--c-acc2)}
+.v1024-iconbtn.is-saved{color:#ffd166}
+
+/* ===== 专题 ===== */
+.v1024-topic-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+.v1024-topic{
+  position:relative;border-radius:var(--r);overflow:hidden;border:1px solid var(--c-line);
+  min-height:250px;display:flex;flex-direction:column;justify-content:flex-end;padding:20px;
+}
+.v1024-topic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:.5s}
+.v1024-topic:hover img{transform:scale(1.06)}
+.v1024-topic::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,10,20,.1),rgba(6,10,20,.94))}
+.v1024-topic>*{position:relative;z-index:2}
+.v1024-topic .v1024-state{
+  align-self:flex-start;font-size:11px;padding:2px 8px;border-radius:4px;
+  background:rgba(0,224,168,.92);color:#052a22;font-weight:700;margin-bottom:auto;
+}
+.v1024-topic .v1024-state.hot{background:rgba(255,107,74,.94);color:#2b0c05}
+.v1024-topic h3{font-size:17px;font-weight:800;margin-bottom:6px}
+.v1024-topic p{font-size:12.5px;color:#b4c1d6;line-height:1.6}
+
+/* ===== 创作者 ===== */
+.v1024-creator-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.v1024-creator{
+  background:var(--c-card);border:1px solid var(--c-line);border-radius:var(--r);
+  padding:22px 18px;text-align:center;transition:.25s;
+}
+.v1024-creator:hover{border-color:rgba(77,141,255,.5);transform:translateY(-4px)}
+.v1024-creator .v1024-bigav{
+  width:58px;height:58px;border-radius:50%;margin:0 auto 12px;display:grid;place-items:center;
+  font-size:21px;font-weight:900;color:#04231d;background:linear-gradient(135deg,#00e0a8,#5ad1ff);
+}
+.v1024-creator .v1024-bigav.v2{background:linear-gradient(135deg,#ff6b4a,#ffc46b);color:#2a1009}
+.v1024-creator .v1024-bigav.v3{background:linear-gradient(135deg,#8f7bff,#b8a5ff);color:#1b1440}
+.v1024-creator .v1024-bigav.v4{background:linear-gradient(135deg,#4d8dff,#7fd6ff);color:#06172e}
+.v1024-creator h3{font-size:15px;margin-bottom:3px}
+.v1024-creator .v1024-field{font-size:11.5px;color:var(--c-acc);margin-bottom:9px;letter-spacing:.5px}
+.v1024-creator p{font-size:12px;color:#8494b0;line-height:1.65;min-height:58px}
+.v1024-creator-data{display:flex;justify-content:center;gap:16px;margin-top:12px;padding-top:11px;border-top:1px solid rgba(255,255,255,.06);font-size:11.5px;color:#7f8ea9}
+.v1024-creator-data b{display:block;color:#dfe8f6;font-size:14px}
+
+/* ===== 作品墙 ===== */
+.v1024-wall{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:132px;gap:14px}
+.v1024-wall figure{
+  position:relative;border-radius:12px;overflow:hidden;border:1px solid var(--c-line);
+}
+.v1024-wall figure img{width:100%;height:100%;object-fit:cover;transition:.45s}
+.v1024-wall figure:hover img{transform:scale(1.07)}
+.v1024-wall figcaption{
+  position:absolute;left:0;right:0;bottom:0;padding:20px 11px 9px;font-size:11.5px;
+  color:#eaf1fb;background:linear-gradient(180deg,transparent,rgba(4,8,16,.92));
+}
+.v1024-wall .w-big{grid-column:span 2;grid-row:span 2}
+.v1024-wall .w-wide{grid-column:span 2}
+
+/* ===== 评价 ===== */
+.v1024-quote-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.v1024-quote{
+  background:rgba(255,255,255,.035);border:1px solid var(--c-line);border-radius:var(--r);
+  padding:20px;display:flex;flex-direction:column;gap:10px;
+}
+.v1024-quote p{font-size:13px;color:#c2cee2;line-height:1.8}
+.v1024-quote .v1024-qwho{display:flex;align-items:center;gap:9px;margin-top:4px}
+.v1024-quote .v1024-qwho span{font-size:12.5px;color:#97a6c1}
+.v1024-stars{color:#ffd166;font-size:12px;letter-spacing:2px}
+
+/* ===== 榜单数据条 ===== */
+.v1024-rank{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.v1024-rank-col{background:var(--c-card);border:1px solid var(--c-line);border-radius:var(--r);padding:18px}
+.v1024-rank-col h3{font-size:14px;margin-bottom:12px;display:flex;align-items:center;gap:7px}
+.v1024-rank-col h3::before{content:"";width:4px;height:14px;border-radius:2px;background:var(--c-acc)}
+.v1024-rank-col li{display:flex;align-items:center;gap:10px;padding:8px 0;font-size:13px;border-bottom:1px dashed rgba(255,255,255,.07)}
+.v1024-rank-col li:last-child{border-bottom:none}
+.v1024-rank-no{
+  width:20px;height:20px;border-radius:6px;display:grid;place-items:center;flex:none;
+  font-size:11px;font-weight:800;background:rgba(255,255,255,.07);color:#9fb0cc;
+}
+.v1024-rank-col li:nth-child(1) .v1024-rank-no{background:var(--c-acc);color:#04231d}
+.v1024-rank-col li:nth-child(2) .v1024-rank-no{background:#4d8dff;color:#fff}
+.v1024-rank-col li:nth-child(3) .v1024-rank-no{background:#ff6b4a;color:#2b0c05}
+.v1024-rank-col li span{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.v1024-rank-col li em{font-style:normal;font-size:11.5px;color:#7f8ea9}
+
+/* ===== 文案解析长文 ===== */
+.v1024-prose{max-width:860px}
+.v1024-prose p{font-size:14.5px;color:#b6c3d8;margin-bottom:16px;line-height:1.95}
+.v1024-prose p b{color:#e6eef9;font-weight:700}
+.v1024-prose h3{font-size:17px;margin:26px 0 10px;color:#fff}
+.v1024-prose blockquote{
+  border-left:3px solid var(--c-acc);background:rgba(0,224,168,.06);
+  padding:14px 18px;border-radius:0 10px 10px 0;font-size:13.5px;color:#a8d9cb;margin-bottom:16px;
+}
+
+/* ===== 动态 & FAQ ===== */
+.v1024-split{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+.v1024-timeline{border-left:1px solid rgba(255,255,255,.12);padding-left:20px;display:flex;flex-direction:column;gap:20px}
+.v1024-timeline li{position:relative}
+.v1024-timeline li::before{
+  content:"";position:absolute;left:-25px;top:7px;width:9px;height:9px;border-radius:50%;
+  background:var(--c-acc);box-shadow:0 0 0 3px rgba(0,224,168,.16);
+}
+.v1024-timeline time{font-size:11.5px;color:var(--c-acc);letter-spacing:.6px}
+.v1024-timeline h3{font-size:14.5px;margin:3px 0 4px}
+.v1024-timeline p{font-size:12.5px;color:#8b9ab6;line-height:1.7}
+.v1024-faq details{
+  background:var(--c-card);border:1px solid var(--c-line);border-radius:12px;
+  padding:14px 18px;margin-bottom:10px;transition:.2s;
+}
+.v1024-faq details[open]{border-color:rgba(0,224,168,.4);background:rgba(0,224,168,.05)}
+.v1024-faq summary{
+  cursor:pointer;font-size:14px;font-weight:600;list-style:none;
+  display:flex;justify-content:space-between;gap:12px;align-items:center;
+}
+.v1024-faq summary::-webkit-details-marker{display:none}
+.v1024-faq summary::after{content:"+";color:var(--c-acc);font-size:18px;font-weight:400;flex:none;transition:.2s}
+.v1024-faq details[open] summary::after{transform:rotate(45deg)}
+.v1024-faq p{font-size:13px;color:#93a3be;margin-top:10px;line-height:1.85}
+
+/* ===== 合作 & 联系 ===== */
+.v1024-partners{display:flex;flex-wrap:wrap;gap:12px}
+.v1024-partner{
+  border:1px solid var(--c-line);border-radius:10px;padding:12px 20px;
+  font-size:13px;color:#a8b6cf;background:rgba(255,255,255,.03);transition:.2s;
+}
+.v1024-partner:hover{color:#fff;border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.07)}
+
+.v1024-contact{
+  margin-top:26px;background:linear-gradient(120deg,#0b2c26,#0a1e33 70%);
+  border:1px solid rgba(0,224,168,.3);border-radius:20px;padding:38px;
+  display:grid;grid-template-columns:1.3fr auto;gap:28px;align-items:center;
+}
+.v1024-contact h2{font-size:26px;margin-bottom:10px}
+.v1024-contact p{font-size:13.5px;color:#a9c3bb;max-width:560px}
+.v1024-contact-acts{display:flex;gap:12px;flex-wrap:wrap}
+
+/* ===== 页脚 ===== */
+.v1024-footer{background:#080c17;border-top:1px solid var(--c-line);padding:52px 0 26px}
+.v1024-foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:36px;margin-bottom:38px}
+.v1024-foot-grid h3{font-size:13.5px;margin-bottom:14px;color:#dfe8f6;letter-spacing:.6px}
+.v1024-foot-grid li{font-size:12.5px;color:#7f8ea9;margin-bottom:9px}
+.v1024-foot-grid li a:hover{color:var(--c-acc)}
+.v1024-foot-brand p{font-size:12.5px;color:#7f8ea9;line-height:1.9;margin:12px 0 14px;max-width:330px}
+.v1024-foot-social{display:flex;gap:9px}
+.v1024-foot-social button{
+  width:34px;height:34px;border-radius:9px;background:rgba(255,255,255,.06);
+  display:grid;place-items:center;font-size:12px;color:#9fb0cc;transition:.2s;
+}
+.v1024-foot-social button:hover{background:rgba(0,224,168,.16);color:var(--c-acc)}
+.v1024-foot-bottom{
+  border-top:1px solid rgba(255,255,255,.07);padding-top:20px;
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  font-size:12px;color:#66748d;
+}
+
+/* ===== 浮动控件 ===== */
+.v1024-top-btn{
+  position:fixed;right:22px;bottom:26px;width:44px;height:44px;border-radius:12px;
+  background:rgba(0,224,168,.16);border:1px solid rgba(0,224,168,.45);color:var(--c-acc);
+  display:grid;place-items:center;font-size:17px;opacity:0;visibility:hidden;
+  transition:.28s;z-index:80;backdrop-filter:blur(8px);
+}
+.v1024-top-btn.is-show{opacity:1;visibility:visible}
+.v1024-top-btn:hover{background:rgba(0,224,168,.3)}
+
+.v1024-toast{
+  position:fixed;left:50%;bottom:88px;transform:translate(-50%,16px);
+  background:#16233b;border:1px solid rgba(0,224,168,.45);color:#d9fff4;
+  font-size:13px;padding:10px 20px;border-radius:10px;z-index:120;
+  opacity:0;visibility:hidden;transition:.28s;box-shadow:0 16px 40px -16px #000;
+  max-width:82vw;text-align:center;
+}
+.v1024-toast.is-show{opacity:1;visibility:visible;transform:translate(-50%,0)}
+
+.v1024-modal{
+  position:fixed;inset:0;z-index:130;display:grid;place-items:center;padding:22px;
+  background:rgba(4,7,14,.78);backdrop-filter:blur(6px);
+  opacity:0;visibility:hidden;transition:.24s;
+}
+.v1024-modal.is-open{opacity:1;visibility:visible}
+.v1024-modal-box{
+  background:#111a2c;border:1px solid var(--c-line);border-radius:18px;
+  padding:26px;max-width:440px;width:100%;transform:translateY(14px);transition:.28s;
+  box-shadow:0 30px 70px -30px #000;
+}
+.v1024-modal.is-open .v1024-modal-box{transform:translateY(0)}
+.v1024-modal-box h3{font-size:18px;margin-bottom:8px}
+.v1024-modal-box p{font-size:13px;color:#8fa0bd;line-height:1.8;margin-bottom:18px}
+.v1024-modal-close{
+  position:absolute;top:14px;right:16px;font-size:20px;color:#8494b0;line-height:1;
+}
+.v1024-modal-box{position:relative}
+.v1024-modal-box label{display:block;font-size:12.5px;color:#9dabc6;margin-bottom:6px}
+.v1024-modal-box input,.v1024-modal-box textarea{
+  width:100%;background:rgba(255,255,255,.05);border:1px solid var(--c-line);
+  border-radius:9px;padding:10px 12px;color:#e8edf7;font-size:13px;font-family:inherit;
+  outline:none;margin-bottom:14px;resize:vertical;
+}
+.v1024-modal-box input:focus,.v1024-modal-box textarea:focus{border-color:var(--c-acc)}
+
+.v1024-share-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:6px}
+.v1024-share-row button{
+  flex:1;min-width:88px;background:rgba(255,255,255,.05);border:1px solid var(--c-line);
+  border-radius:10px;padding:11px 8px;font-size:12.5px;color:#c2cee2;transition:.2s;
+}
+.v1024-share-row button:hover{border-color:var(--c-acc);color:var(--c-acc);background:rgba(0,224,168,.08)}
+
+/* ===== 响应式 ===== */
+@media(max-width:1024px){
+  .v1024-hero-grid{grid-template-columns:1fr;gap:34px}
+  .v1024-h1{font-size:46px}
+  .v1024-vgrid{grid-template-columns:repeat(2,1fr)}
+  .v1024-creator-grid{grid-template-columns:repeat(2,1fr)}
+  .v1024-quote-grid,.v1024-rank{grid-template-columns:1fr}
+  .v1024-split{grid-template-columns:1fr;gap:34px}
+  .v1024-foot-grid{grid-template-columns:1fr 1fr}
+  .v1024-focus-grid{grid-template-columns:1fr}
+  .v1024-contact{grid-template-columns:1fr}
+  .v1024-nav{
+    position:absolute;top:100%;left:0;right:0;background:#0d1424;
+    border-bottom:1px solid var(--c-line);flex-direction:column;padding:10px 22px 16px;
+    gap:2px;display:none;box-shadow:0 20px 40px -20px #000;
+  }
+  .v1024-header{position:relative}
+  .v1024-nav.is-open{display:flex}
+  .v1024-burger{display:flex}
+  .v1024-search input{width:96px}
+}
+@media(max-width:760px){
+  .v1024-h1{font-size:38px}
+  .v1024-hero{padding:44px 0 40px}
+  .v1024-sec{padding:52px 0}
+  .v1024-h2{font-size:24px}
+  .v1024-vgrid,.v1024-creator-grid{grid-template-columns:1fr}
+  .v1024-wall{grid-template-columns:repeat(2,1fr);grid-auto-rows:118px}
+  .v1024-wall .w-big{grid-column:span 2;grid-row:span 1}
+  .v1024-focus-main img{min-height:280px}
+  .v1024-search{display:none}
+  .v1024-head-inner{height:60px;gap:12px}
+  .v1024-foot-grid{grid-template-columns:1fr}
+  .v1024-contact{padding:26px}
+  .v1024-hero-float{left:0;bottom:-14px;padding:9px 12px}
+  .v1024-stats{gap:22px}
+  .v1024-stat b{font-size:21px}
+  .v1024-mini-thumb{width:36%}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="v1024-stickyhead">
+  <!-- 公告条 -->
+  <div class="v1024-notice" id="v1024Notice">
+    <div class="v1024-notice-inner">
+      <span class="v1024-notice-tag">公告</span>
+      <div class="v1024-notice-track">
+        新增 <b>「城市微光」第二季</b> 4 支正片已上线 · <b>1024 影像大赛报名</b> 开启至 12 月 15 日 · 创作者中心新版剪辑攻略已发布
+      </div>
+      <button class="v1024-notice-close" id="v1024NoticeClose" aria-label="关闭公告">×</button>
+    </div>
+  </div>
+
+  <!-- 页头 -->
+  <header class="v1024-header">
+    <div class="v1024-head-inner">
+      <a href="#v1024Home" class="v1024-logo" aria-label="1024 官方网站首页">
+        <span class="v1024-logo-mark" aria-hidden="true"></span>
+        <span class="v1024-logo-txt">1024<em>官网</em></span>
+      </a>
+      <nav class="v1024-nav" id="v1024Nav" aria-label="主导航">
+        <a href="#v1024Home" class="is-active">首页</a>
+        <a href="#v1024Focus">焦点内容</a>
+        <a href="#v1024Stream">视频流</a>
+        <a href="#v1024Topics">专题企划</a>
+        <a href="#v1024Creators">创作者</a>
+        <a href="#v1024Dynamics">企业动态</a>
+        <a href="#v1024Help">帮助</a>
+        <a href="#v1024Contact">联系</a>
+      </nav>
+      <div class="v1024-head-tools">
+        <div class="v1024-search">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <input type="search" id="v1024Search" placeholder="搜索内容 / 创作者" aria-label="站内搜索">
+        </div>
+        <button class="v1024-btn-acc" id="v1024SubmitBtn">投稿入口</button>
+        <button class="v1024-burger" id="v1024Burger" aria-label="展开菜单" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main>
+
+  <!-- 首屏 -->
+  <section class="v1024-hero" id="v1024Home">
+    <div class="v1024-wrap">
+      <div class="v1024-hero-grid">
+        <div>
+          <span class="v1024-eyebrow"><i></i>1024 品牌官方网站 · 原创高清影像</span>
+          <h1 class="v1024-h1"><span>1024</span></h1>
+          <p class="v1024-hero-sub">让每一帧真实影像，都被完整看见</p>
+          <p class="v1024-hero-desc">
+            这里是 1024 的官方网站。作为深耕原创影像领域的视频内容品牌，我们以企业与创作者共建的方式，持续输出高清、正版、有品质的精品内容，陪伴每一位用户在日常里找到属于自己的光。
+          </p>
+          <div class="v1024-hero-btns">
+            <a href="#v1024Stream" class="v1024-btn-acc">浏览今日精选</a>
+            <a href="#v1024Story" class="v1024-btn-ghost">了解品牌故事</a>
+            <a href="#v1024Creators" class="v1024-btn-ghost">创作者矩阵</a>
+          </div>
+          <div class="v1024-stats">
+            <div class="v1024-stat"><b>3,860<i>+</i></b><span>原创内容存量</span></div>
+            <div class="v1024-stat"><b>1,240<i>+</i></b><span>入驻创作者</span></div>
+            <div class="v1024-stat"><b>68<i>万</i></b><span>社区月活用户</span></div>
+          </div>
+        </div>
+        <div class="v1024-hero-visual">
+          <div class="v1024-hero-frame">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 400'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23071426'/%3E%3Cstop offset='.55' stop-color='%2314384e'/%3E%3Cstop offset='1' stop-color='%230a2334'/%3E%3C/linearGradient%3E%3CradialGradient id='g2' cx='.72' cy='.3' r='.6'%3E%3Cstop offset='0' stop-color='%2300e0a8' stop-opacity='.55'/%3E%3Cstop offset='1' stop-color='%2300e0a8' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='640' height='400' fill='url(%23g1)'/%3E%3Crect width='640' height='400' fill='url(%23g2)'/%3E%3Cg stroke='%2300e0a8' stroke-opacity='.35' fill='none'%3E%3Ccircle cx='452' cy='128' r='64'/%3E%3Ccircle cx='452' cy='128' r='96' stroke-opacity='.18'/%3E%3Cpath d='M0 310 Q120 250 250 300 T640 268' stroke-width='2'/%3E%3Cpath d='M0 348 Q150 300 300 344 T640 318' stroke-opacity='.16'/%3E%3C/g%3E%3Cg fill='%23e8f7ff' opacity='.8'%3E%3Crect x='58' y='64' width='120' height='9' rx='4'/%3E%3Crect x='58' y='86' width='76' height='7' rx='3.5' opacity='.55'/%3E%3C/g%3E%3Cg fill='%2300e0a8'%3E%3Crect x='58' y='330' width='160' height='6' rx='3'/%3E%3C/g%3E%3Cg fill='%23ff6b4a'%3E%3Ccircle cx='560' cy='330' r='6'/%3E%3C/g%3E%3C/svg%3E" alt="1024 官方网站品牌主视觉：深蓝夜色中的影像光束与城市轮廓">
+            <div class="v1024-hero-play" id="v1024HeroPlay" role="button" tabindex="0" aria-label="播放品牌形象片">
+              <i></i>
+            </div>
+          </div>
+          <div class="v1024-hero-float">
+            <em>01</em>
+            <div>
+              <b>本周品牌形象片</b>
+              <span>4K 高清 · 时长 3:24</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点内容 -->
+  <section class="v1024-sec alt" id="v1024Focus">
+    <div class="v1024-wrap">
+      <div class="v1024-sec-head">
+        <div class="v1024-sec-kicker">FOCUS / 焦点内容</div>
+        <h2 class="v1024-h2">本期焦点：把镜头对准真实的人与事
+          <small>由 1024 内容编辑部与创作者共同选出的本期重点影像，涵盖城市观察、创作幕后与人物访谈三条线索。</small>
+        </h2>
+      </div>
+      <div class="v1024-focus-grid">
+        <article class="v1024-focus-main">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 560'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='.9' y2='1'%3E%3Cstop offset='0' stop-color='%231c0f2e'/%3E%3Cstop offset='.5' stop-color='%23321a4a'/%3E%3Cstop offset='1' stop-color='%23110820'/%3E%3C/linearGradient%3E%3ClinearGradient id='f2' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23ff6b4a' stop-opacity='.7'/%3E%3Cstop offset='1' stop-color='%23ffc46b' stop-opacity='.15'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='560' fill='url(%23f1)'/%3E%3Cg fill='url(%23f2)'%3E%3Cpath d='M0 560 L200 300 L380 420 L560 220 L800 470 L800 560 Z'/%3E%3C/g%3E%3Cg fill='%23ffd9a8' opacity='.85'%3E%3Ccircle cx='620' cy='120' r='40'/%3E%3C/g%3E%3Cg stroke='%23ffb08f' stroke-opacity='.4' fill='none'%3E%3Cpath d='M80 90 q120 40 220 10' stroke-width='2'/%3E%3Cpath d='M80 116 q150 50 300 6' stroke-width='1.5' stroke-opacity='.3'/%3E%3C/g%3E%3Cg fill='%23fff3e6' opacity='.75'%3E%3Crect x='60' y='470' width='140' height='9' rx='4'/%3E%3Crect x='60' y='492' width='92' height='7' rx='3.5' opacity='.5'/%3E%3C/g%3E%3C/svg%3E" alt="焦点内容封面：城市暮色中的人物剪影与暖色天际线">
+          <div class="v1024-focus-cover-mask"></div>
+          <div class="v1024-focus-info">
+            <span class="v1024-badge">本期头条</span>
+            <h3>《城市微光》第二季 01 集：凌晨四点的面包房，和守了十二年的那盏灯</h3>
+            <p>我们把镜头留在一条老巷子里，记录一对夫妻与他们的面包房，在城市醒来之前的四个小时里发生了什么。</p>
+            <div class="v1024-meta">
+              <span>作者：拾光记录</span><span>2026-11-14 发布</span><span>时长 24:18</span><span>4K 高清</span>
+            </div>
+          </div>
+        </article>
+        <div class="v1024-focus-side">
+          <article class="v1024-mini">
+            <div class="v1024-mini-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Cdefs%3E%3ClinearGradient id='m1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23061f2b'/%3E%3Cstop offset='1' stop-color='%230e4d52'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='300' fill='url(%23m1)'/%3E%3Cg stroke='%2300e0a8' stroke-opacity='.5' fill='none' stroke-width='1.5'%3E%3Cpath d='M40 230 L120 150 L190 205 L270 110 L360 190'/%3E%3Crect x='52' y='52' width='110' height='64' rx='8' stroke-opacity='.35'/%3E%3C/g%3E%3Cg fill='%2300e0a8'%3E%3Ccircle cx='270' cy='110' r='7'/%3E%3C/g%3E%3Cg fill='%23d9fff4' opacity='.7'%3E%3Crect x='52' y='66' width='60' height='7' rx='3.5'/%3E%3Crect x='52' y='84' width='40' height='6' rx='3' opacity='.5'/%3E%3C/g%3E%3C/svg%3E" alt="焦点内容封面：蓝色调的数据曲线与创作台界面">
+              <span class="v1024-vtag">创作幕后</span>
+            </div>
+            <div class="v1024-mini-body">
+              <h4>一支 3 分钟短片，我们拍了 41 天</h4>
+              <p>摄影、灯光、调色全流程拆解，讲清预算有限时的取舍逻辑。</p>
+            </div>
+          </article>
+          <article class="v1024-mini">
+            <div class="v1024-mini-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Cdefs%3E%3ClinearGradient id='m2' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%232a1024'/%3E%3Cstop offset='1' stop-color='%23662a3c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='300' fill='url(%23m2)'/%3E%3Cg fill='%23ff8fb1' opacity='.55'%3E%3Ccircle cx='310' cy='82' r='46'/%3E%3C/g%3E%3Cg stroke='%23ffd0dc' stroke-opacity='.45' fill='none'%3E%3Cpath d='M0 240 Q100 190 200 232 T400 206' stroke-width='2'/%3E%3C/g%3E%3Cg fill='%23fff0f4' opacity='.8'%3E%3Crect x='44' y='210' width='130' height='8' rx='4'/%3E%3Crect x='44' y='232' width='86' height='6' rx='3' opacity='.55'/%3E%3C/g%3E%3C/svg%3E" alt="焦点内容封面：粉紫色调的人物访谈现场与柔光背景">
+              <span class="v1024-vtag">人物访谈</span>
+            </div>
+            <div class="v1024-mini-body">
+              <h4>对话独立导演：先把日常拍透，再谈远方</h4>
+              <p>关于坚持、关于妥协，也关于一个人如何与自己的作品相处。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 视频流 -->
+  <section class="v1024-sec" id="v1024Stream">
+    <div class="v1024-wrap">
+      <div class="v1024-sec-head">
+        <div class="v1024-sec-kicker">STREAM / 热门视频流</div>
+        <h2 class="v1024-h2">今日精选影像
+          <small>由社区热度与编辑推荐共同决定，每一条都来自 1024 正版内容库，点击卡片可查看详情与评论区。</small>
+        </h2>
+      </div>
+      <div class="v1024-tabs" id="v1024Tabs">
+        <button class="v1024-tab is-active" data-filter="all">全部</button>
+        <button class="v1024-tab" data-filter="city">城市探索</button>
+        <button class="v1024-tab" data-filter="craft">创作幕后</button>
+        <button class="v1024-tab" data-filter="life">生活方式</button>
+        <button class="v1024-tab" data-filter="talk">人物访谈</button>
+      </div>
+
+      <div class="v1024-vgrid" id="v1024VGrid">
+
+        <article class="v1024-card" data-cat="city">
+          <div class="v1024-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='c1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230b1c33'/%3E%3Cstop offset='1' stop-color='%231a3c5e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23c1)'/%3E%3Cg fill='%230d2a44'%3E%3Crect x='0' y='170' width='70' height='100'/%3E%3Crect x='80' y='140' width='56' height='130'/%3E%3Crect x='148' y='186' width='64' height='84'/%3E%3Crect x='226' y='118' width='50' height='152'/%3E%3Crect x='290' y='162' width='72' height='108'/%3E%3Crect x='376' y='130' width='58' height='140'/%3E%3C/g%3E%3Cg fill='%23ffd166' opacity='.8'%3E%3Crect x='240' y='140' width='6' height='9'/%3E%3Crect x='256' y='164' width='6' height='9'/%3E%3Crect x='96' y='160' width='5' height='8'/%3E%3Crect x='392' y='152' width='5' height='8'/%3E%3C/g%3E%3Cg stroke='%234d8dff' stroke-opacity='.5' fill='none'%3E%3Cpath d='M0 96 Q140 60 280 92 T480 70' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E" alt="城市探索视频封面：夜间的城市楼群与亮着的窗">
+            <div class="v1024-thumb-mask"></div>
+            <span class="v1024-dur">12:40</span>
+          </div>
+          <div class="v1024-body">
+            <div class="v1024-tagrow"><span class="v1024-tag">城市探索</span><span class="v1024-tag b">4K</span></div>
+            <h3>沿着一条公交线，走完这座城市的东西两端</h3>
+            <p>从起点站到终点站，一张两元的票，串起早市、学校、老厂房与江边的黄昏。</p>
+            <div class="v1024-cardfoot">
+              <div class="v1024-author-mini"><span class="v1024-avatar">拾</span>拾光记录</div>
+              <div class="v1024-cardacts">
+                <button class="v1024-iconbtn" data-like>♡ 1,284</button>
+                <button class="v1024-iconbtn" data-save>☆</button>
+                <button class="v1024-iconbtn" data-share>分享</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="v1024-card" data-cat="craft">
+          <div class="v1024-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='c2' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%230a2620'/%3E%3Cstop offset='1' stop-color='%23126b53'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23c2)'/%3E%3Cg stroke='%2300e0a8' fill='none' stroke-width='2' stroke-opacity='.7'%3E%3Crect x='96' y='62' width='288' height='146' rx='10'/%3E%3Cpath d='M216 122 L266 135 L216 148 Z' fill='%2300e0a8' fill-opacity='.8' stroke='none'/%3E%3C/g%3E%3Cg fill='%23bff7e7' opacity='.6'%3E%3Crect x='96' y='228' width='120' height='7' rx='3.5'/%3E%3Crect x='96' y='246' width='76' height='6' rx='3' opacity='.5'/%3E%3C/g%3E%3Cg fill='%2300e0a8' opacity='.35'%3E%3Crect x='36' y='36' width='44' height='44' rx='8'/%3E%3C/g%3E%3C/svg%3E" alt="创作幕后视频封面：剪辑软件时间线与绿色波形">
+            <div class="v1024-thumb-mask"></div>
+            <span class="v1024-dur">18:05</span>
+          </div>
+          <div class="v1024-body">
+            <div class="v1024-tagrow"><span class="v1024-tag">创作幕后</span><span class="v1024-tag c">干货</span></div>
+            <h3>镜头语言入门：五个办法让你的画面开始讲故事</h3>
+            <p>不用昂贵设备，靠机位、景别与节奏，把普通的一天剪出情绪和层次。</p>
+            <div class="v1024-cardfoot">
+              <div class="v1024-author-mini"><span class="v1024-avatar v2">帧</span>帧间笔记</div>
+              <div class="v1024-cardacts">
+                <button class="v1024-iconbtn" data-like>♡ 2,046</button>
+                <button class="v1024-iconbtn" data-save>☆</button>
+                <button class="v1024-iconbtn" data-share>分享</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="v1024-card" data-cat="life">
+          <div class="v1024-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='c3' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23281a0c'/%3E%3Cstop offset='1' stop-color='%237a4a16'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23c3)'/%3E%3Cg fill='%23ffc46b' opacity='.85'%3E%3Ccircle cx='368' cy='76' r='34'/%3E%3C/g%3E%3Cg fill='%233d2710'%3E%3Crect x='0' y='196' width='480' height='74'/%3E%3C/g%3E%3Cg stroke='%23ffc46b' stroke-opacity='.55' fill='none' stroke-width='2'%3E%3Cpath d='M60 196 Q100 120 160 196'/%3E%3Cpath d='M190 196 Q230 130 290 196'/%3E%3C/g%3E%3Cg fill='%23fff3dc' opacity='.8'%3E%3Crect x='44' y='40' width='110' height='8' rx='4'/%3E%3Crect x='44' y='62' width='70' height='6' rx='3' opacity='.55'/%3E%3C/g%3E%3C/svg%3E" alt="生活方式视频封面：暖色厨房台面与窗边光线">
+            <div class="v1024-thumb-mask"></div>
+            <span class="v1024-dur">09:32</span>
+          </div>
+          <div class="v1024-body">
+            <div class="v1024-tagrow"><span class="v1024-tag">生活方式</span><span class="v1024-tag b">治愈</span></div>
+            <h3>一个人做饭的第七百天：厨房里的秩序感</h3>
+            <p>收纳、备菜、洗碗的顺序里，藏着让日子稳下来的小方法。</p>
+            <div class="v1024-cardfoot">
+              <div class="v1024-author-mini"><span class="v1024-avatar v3">慢</span>慢半拍厨房</div>
+              <div class="v1024-cardacts">
+                <button class="v1024-iconbtn" data-like>♡ 3,517</button>
+                <button class="v1024-iconbtn" data-save>☆</button>
+                <button class="v1024-iconbtn" data-share>分享</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="v1024-card" data-cat="talk">
+          <div class="v1024-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='c4' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%231b1230'/%3E%3Cstop offset='1' stop-color='%23402a6b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23c4)'/%3E%3Cg fill='%23b8a5ff' opacity='.5'%3E%3Ccircle cx='150' cy='132' r='46'/%3E%3Ccircle cx='242' cy='132' r='46' opacity='.7'/%3E%3C/g%3E%3Cg stroke='%23e2d8ff' stroke-opacity='.5' fill='none' stroke-width='1.6'%3E%3Crect x='52' y='52' width='376' height='166' rx='14'/%3E%3C/g%3E%3Cg fill='%23efe8ff' opacity='.8'%3E%3Crect x='72' y='204' width='120' height='7' rx='3.5'/%3E%3Crect x='72' y='222' width='74' height='6' rx='3' opacity='.5'/%3E%3C/g%3E%3C/svg%3E" alt="人物访谈视频封面：紫色演播空间中的两个剪影">
+            <div class="v1024-thumb-mask"></div>
+            <span class="v1024-dur">26:11</span>
+          </div>
+          <div class="v1024-body">
+            <div class="v1024-tagrow"><span class="v1024-tag">人物访谈</span><span class="v1024-tag c">深度</span></div>
+            <h3>做了十年纪录片的她说：耐心本身就是一种技术</h3>
+            <p>从选题到跟拍，再聊到创作者如何面对沉默与被拒绝。</p>
+            <div class="v1024-cardfoot">
+              <div class="v1024-author-mini"><span class="v1024-avatar v4">纪</span>纪实会客厅</div>
+              <div class="v1024-cardacts">
+                <button class="v1024-iconbtn" data-like>♡ 986</button>
+                <button class="v1024-iconbtn" data-save>☆</button>
+                <button class="v1024-iconbtn" data-share>分享</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="v1024-card" data-cat="city">
+          <div class="v1024-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='c5' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23102a26'/%3E%3Cstop offset='1' stop-color='%233c5c3a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23c5)'/%3E%3Cg stroke='%23a7d8a0' stroke-opacity='.5' fill='none' stroke-width='2'%3E%3Cpath d='M0 210 Q80 150 160 200 T320 180 T480 214'/%3E%3Cpath d='M0 236 Q120 190 240 230 T480 212' stroke-opacity='.28'/%3E%3C/g%3E%3Cg fill='%23c9f0c1' opacity='.75'%3E%3Ccircle cx='380' cy='72' r='26'/%3E%3C/g%3E%3Cg fill='%23effff0' opacity='.8'%3E%3Crect x='44' y='44' width='118' height='8' rx='4'/%3E%3Crect x='44' y='66' width='72' height='6' rx='3' opacity='.55'/%3E%3C/g%3E%3C/svg%3E" alt="城市探索视频封面：公园绿道与远处骑行者">
+            <div class="v1024-thumb-mask"></div>
+            <span class="v1024-dur">14:27</span>
+          </div>
+          <div class="v1024-body">
+            <div class="v1024-tagrow"><span class="v1024-tag">城市探索</span><span class="v1024-tag b">周末</span></div>
+            <h3>城市里的十二条绿道：骑车能到达的松弛感</h3>
+            <p>实测路况、坡度、补给点，附一份可以直接照着走的路线清单。</p>
+            <div class="v1024-cardfoot">
+              <div class="v1024-author-mini"><span class="v1024-avatar v5">野</span>野行半径</div>
+              <div class="v1024-cardacts">
+                <button class="v1024-iconbtn" data-like>♡ 1,630</button>
+                <button class="v1024-iconbtn" data-save>☆</button>
+                <button class="v1024-iconbtn" data-share>分享</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="v1024-card" data-cat="craft">
+          <div class="v1024-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='c6' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23161a2e'/%3E%3Cstop offset='1' stop-color='%232b3f7a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23c6)'/%3E%3Cg stroke='%234d8dff' stroke-opacity='.65' fill='none' stroke-width='2'%3E%3Cpath d='M52 214 L132 148 L212 186 L292 108 L372 158 L436 112'/%3E%3C/g%3E%3Cg fill='%237fd6ff'%3E%3Ccircle cx='132' cy='148' r='5'/%3E%3Ccircle cx='292' cy='108' r='5'/%3E%3Ccircle cx='372' cy='158' r='5'/%3E%3C/g%3E%3Cg fill='%23cfe4ff' opacity='.8'%3E%3Crect x='52' y='44' width='126' height='8' rx='4'/%3E%3Crect x='52' y='66' width='80' height='6' rx='3' opacity='.55'/%3E%3C/g%3E%3C/svg%3E" alt="创作幕后视频封面：蓝色调的数据曲线与流程图">
+            <div class="v1024-thumb-mask"></div>
+            <span class="v1024-dur">11:58</span>
+          </div>
+          <div class="v1024-body">
+            <div class="v1024-tagrow"><span class="v1024-tag">创作幕后</span><span class="v1024-tag b">教程</span></div>
+            <h3>从零做一个系列企划：选题表、排期与拍摄清单</h3>
+            <p>把灵感变成可执行的表格，这才是能持续更新的关键一步。</p>
+            <div class="v1024-cardfoot">
+              <div class="v1024-author-mini"><span class="v1024-avatar">帧</span>帧间笔记</div>
+              <div class="v1024-cardacts">
+                <button class="v1024-iconbtn" data-like>♡ 1,172</button>
+                <button class="v1024-iconbtn" data-save>☆</button>
+                <button class="v1024-iconbtn" data-share>分享</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题企划 -->
+  <section class="v1024-sec alt" id="v1024Topics">
+    <div class="v1024-wrap">
+      <div class="v1024-sec-head">
+        <div class="v1024-sec-kicker">SERIES / 专题企划</div>
+        <h2 class="v1024-h2">正在更新的专题企划
+          <small>1024 官方发布的连载企划，围绕同一主题持续拍摄与整理，形成可回看的完整影像档案。</small>
+        </h2>
+      </div>
+      <div class="v1024-topic-grid">
+        <a href="#v1024Stream" class="v1024-topic">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 320'%3E%3Cdefs%3E%3ClinearGradient id='t1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230a1f2e'/%3E%3Cstop offset='1' stop-color='%231e4a5e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='320' fill='url(%23t1)'/%3E%3Cg fill='%2300e0a8' opacity='.55'%3E%3Crect x='42' y='230' width='14' height='50'/%3E%3Crect x='70' y='200' width='14' height='80'/%3E%3Crect x='98' y='244' width='14' height='36'/%3E%3Crect x='126' y='180' width='14' height='100'/%3E%3C/g%3E%3Cg stroke='%237fd6ff' stroke-opacity='.45' fill='none'%3E%3Cpath d='M220 240 Q270 160 330 220 T400 190' stroke-width='2'/%3E%3C/g%3E%3Cg fill='%23d9f6ff' opacity='.75'%3E%3Crect x='42' y='60' width='108' height='9' rx='4.5'/%3E%3Crect x='42' y='82' width='66' height='7' rx='3.5' opacity='.5'/%3E%3C/g%3E%3C/svg%3E" alt="专题企划封面：城市微光系列与夜色楼宇轮廓">
+          <span class="v1024-state">更新至 08 集</span>
+          <h3>城市微光 · 第二季</h3>
+          <p>记录凌晨与深夜仍在工作的人，一集一个职业，一集一条街。</p>
+        </a>
+        <a href="#v1024Stream" class="v1024-topic">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 320'%3E%3Cdefs%3E%3ClinearGradient id='t2' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%232b1414'/%3E%3Cstop offset='1' stop-color='%236b2a2a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='320' fill='url(%23t2)'/%3E%3Cg fill='%23ff6b4a' opacity='.5'%3E%3Ccircle cx='300' cy='96' r='54'/%3E%3C/g%3E%3Cg stroke='%23ffb199' stroke-opacity='.5' fill='none' stroke-width='2'%3E%3Crect x='42' y='150' width='270' height='120' rx='10'/%3E%3Cpath d='M42 190 L312 190' stroke-opacity='.3'/%3E%3C/g%3E%3Cg fill='%23ffe6de' opacity='.78'%3E%3Crect x='42' y='60' width='118' height='9' rx='4.5'/%3E%3Crect x='42' y='82' width='72' height='7' rx='3.5' opacity='.5'/%3E%3C/g%3E%3C/svg%3E" alt="专题企划封面：创作幕后系列的暖红工作台场景">
+          <span class="v1024-state hot">每周三更新</span>
+          <h3>拍之前 · 创作幕后</h3>
+          <p>从选题到成片的全流程复盘，讲清每一次取舍背后的理由。</p>
+        </a>
+        <a href="#v1024Stream" class="v1024-topic">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 320'%3E%3Cdefs%3E%3ClinearGradient id='t3' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231c2412'/%3E%3Cstop offset='1' stop-color='%23475a26'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='320' fill='url(%23t3)'/%3E%3Cg stroke='%23c9f0a8' stroke-opacity='.5' fill='none' stroke-width='2'%3E%3Cpath d='M30 260 Q110 190 200 244 T380 210'/%3E%3Cpath d='M30 288 Q140 228 260 276 T380 252' stroke-opacity='.25'/%3E%3C/g%3E%3Cg fill='%23e6ffcc' opacity='.75'%3E%3Crect x='42' y='56' width='124' height='9' rx='4.5'/%3E%3Crect x='42' y='78' width='70' height='7' rx='3.5' opacity='.5'/%3E%3C/g%3E%3Cg fill='%23ffd166' opacity='.7'%3E%3Ccircle cx='318' cy='86' r='30'/%3E%3C/g%3E%3C/svg%3E" alt="专题企划封面：慢生活系列与山野草地光影">
+          <span class="v1024-state">已完结 · 12 集</span>
+          <h3>慢半拍生活手记</h3>
+          <p>把节奏放慢一点，看看日常里那些被忽略的小事与小物。</p>
+        </a>
+        <a href="#v1024Stream" class="v1024-topic">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 320'%3E%3Cdefs%3E%3ClinearGradient id='t4' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23161233'/%3E%3Cstop offset='1' stop-color='%234b3a80'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='320' fill='url(%23t4)'/%3E%3Cg fill='%23b8a5ff' opacity='.45'%3E%3Ccircle cx='128' cy='170' r='40'/%3E%3Ccircle cx='212' cy='170' r='40' opacity='.7'/%3E%3C/g%3E%3Cg stroke='%23e2d8ff' stroke-opacity='.45' fill='none' stroke-width='2'%3E%3Crect x='42' y='214' width='316' height='66' rx='10'/%3E%3C/g%3E%3Cg fill='%23f1ecff' opacity='.78'%3E%3Crect x='42' y='56' width='132' height='9' rx='4.5'/%3E%3Crect x='42' y='78' width='80' height='7' rx='3.5' opacity='.5'/%3E%3C/g%3E%3C/svg%3E" alt="专题企划封面：人物访谈系列的紫色对话空间">
+          <span class="v1024-state hot">报名中</span>
+          <h3>双向对话 · 创作者访谈</h3>
+          <p>不追问流量，只聊作品与方法，每月与两位创作者深谈一次。</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者 -->
+  <section class="v1024-sec" id="v1024Creators">
+    <div class="v1024-wrap">
+      <div class="v1024-sec-head">
+        <div class="v1024-sec-kicker">CREATORS / 创作者矩阵</div>
+        <h2 class="v1024-h2">在 1024 持续创作的人
+          <small>他们是 1024 内容生态里最真实的力量，用镜头记录日常，也用作品与社区彼此陪伴。</small>
+        </h2>
+      </div>
+      <div class="v1024-creator-grid">
+        <article class="v1024-creator" data-creator="拾光记录">
+          <div class="v1024-bigav">拾</div>
+          <h3>拾光记录</h3>
+          <div class="v1024-field">城市探索 · 纪录短片</div>
+          <p>习惯在清晨与深夜出门，拍那些还没被讲完的街头故事。</p>
+          <div class="v1024-creator-data">
+            <div><b>82</b>作品</div><div><b>24.6万</b>关注</div>
+          </div>
+        </article>
+        <article class="v1024-creator" data-creator="帧间笔记">
+          <div class="v1024-bigav v2">帧</div>
+          <h3>帧间笔记</h3>
+          <div class="v1024-field">创作幕后 · 教程干货</div>
+          <p>把复杂的镜头语言讲成人人都能用的方法，专注方法论的长期更新。</p>
+          <div class="v1024-creator-data">
+            <div><b>126</b>作品</div><div><b>31.2万</b>关注</div>
+          </div>
+        </article>
+        <article class="v1024-creator" data-creator="慢半拍厨房">
+          <div class="v1024-bigav v3">慢</div>
+          <h3>慢半拍厨房</h3>
+          <div class="v1024-field">生活方式 · 美食烹饪</div>
+          <p>一个人吃饭，也要认真对待。分享厨房里的秩序与治愈。</p>
+          <div class="v1024-creator-data">
+            <div><b>64</b>作品</div><div><b>18.9万</b>关注</div>
+          </div>
+        </article>
+        <article class="v1024-creator" data-creator="纪实会客厅">
+          <div class="v1024-bigav v4">纪</div>
+          <h3>纪实会客厅</h3>
+          <div class="v1024-field">人物访谈 · 深度内容</div>
+          <p>用一小时的对谈，换一个更完整的答案。坚持慢工出细活。</p>
+          <div class="v1024-creator-data">
+            <div><b>39</b>作品</div><div><b>12.4万</b>关注</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 品牌解析长文 -->
+  <section class="v1024-sec alt" id="v1024Story">
+    <div class="v1024-wrap">
+      <div class="v1024-sec-head">
+        <div class="v1024-sec-kicker">BRAND / 品牌解析</div>
+        <h2 class="v1024-h2">关于 1024：一个专注真实影像的视频品牌
+          <small>读懂我们为什么坚持原创、坚持高清、坚持与创作者一起长期运营。</small>
+        </h2>
+      </div>
+      <div class="v1024-prose">
+        <p>把 <b>1024</b> 当作一个数字，它足够具体；把它当作一个品牌，它意味着某种对细节的耐心。1024 是一个以原创影像为核心的视频内容品牌，也是面向企业与创作者共同开放的内容平台。我们相信，真正能被记住的画面从来不是靠堆砌素材完成的，它需要清晰的表达、真实的现场，以及愿意花时间的人。</p>
+        <p>作为 1024 的官方网站，这里承担的不只是内容陈列功能。我们希望它更像一扇长期开着的门：用户在这里能找到值得反复观看的高清作品，创作者在这里能获得稳定的发布渠道、专业的内容建议与可持续的成长路径，企业与合作伙伴则可以在透明的规则下参与共建。三者共同构成了 1024 的内容生态，也构成了我们对“品质”与“口碑”最直接的理解。</p>
+        <h3>一、为什么把“真实”放在第一位</h3>
+        <p>影像的门槛在降低，但表达的门槛并没有。1024 在选题会上最常问的一句话是：这件事真的发生过吗，还是只是看起来像发生过？我们把“真实”作为内容的第一道标准，因此在 1024 上，你会看到大量没有宏大叙事的作品：一顿普通的晚饭、一条走了十年的回家路、一个面包房在凌晨四点的第一炉面包。它们不煽情，却有力量。</p>
+        <blockquote>我们不追求让每一帧都惊艳，而是希望让每一帧都站得住。这是 1024 对原创内容最朴素的承诺。</blockquote>
+        <h3>二、高清不只是参数，而是态度</h3>
+        <p>1024 的所有正版内容均以高清标准交付，从拍摄建议、素材管理到成片输出，形成一套可复用的规范。我们并不认为设备决定一切，但在 1024，画质与声音的处理会被认真讨论：光线是否足够诚实，现场声是否保留了应有的空间感，字幕的节奏是否打断了观看。这些细节叠加起来，才是用户愿意留下的理由。</p>
+        <h3>三、与创作者一起成长的机制</h3>
+        <p>1024 把创作者视为长期伙伴而非内容供给方。平台提供选题支持、剪辑建议、系列企划共建与阶段性的成长计划，也设有创作者社区供彼此交流。我们更愿意把“比赛”“报名”“上传”“攻略”“挑战”“投票”这些机制看作是创作生态的日常动作，而不是一次性的活动。当一位创作者从第一条短片走到第十个系列，1024 希望自己始终在场。</p>
+        <h3>四、企业级的内容运营与责任</h3>
+        <p>作为一个持续运营的视频品牌，1024 在企业层面同样重视规范与透明。我们建立了内容审核与版权说明机制，尊重原创与正版授权；在合作中坚持清晰的分工与可追溯的发布记录；在社区治理上以用户至上为原则，让不同声音都能被妥善回应。多元、包容、温暖，是我们希望内容生态呈现出的样子，也是我们对自身的要求。</p>
+        <p>如果你第一次来到 1024，可以先从本期焦点看起，再挑一个感兴趣的专题追下去。如果你已经在创作，欢迎通过投稿入口把作品交给社区，也欢迎在帮助中心找到你需要的答案。1024 会继续深耕这一垂直领域，用更稳的节奏，做更耐看的内容。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 作品墙 -->
+  <section class="v1024-sec" id="v1024Wall">
+    <div class="v1024-wrap">
+      <div class="v1024-sec-head">
+        <div class="v1024-sec-kicker">GALLERY / 用户作品墙</div>
+        <h2 class="v1024-h2">社区影像墙
+          <small>来自 1024 社区用户的静帧作品，本文集由大家共同上传与投票选出。</small>
+        </h2>
+      </div>
+      <div class="v1024-wall">
+        <figure class="w-big">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 500'%3E%3Cdefs%3E%3ClinearGradient id='w1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23122636'/%3E%3Cstop offset='1' stop-color='%23325d75'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='600' height='500' fill='url(%23w1)'/%3E%3Cg fill='%230c1e2c'%3E%3Crect x='0' y='340' width='600' height='160'/%3E%3C/g%3E%3Cg stroke='%237fd6ff' stroke-opacity='.5' fill='none' stroke-width='2'%3E%3Cpath d='M0 300 Q120 240 260 290 T600 260'/%3E%3C/g%3E%3Cg fill='%23ffd166' opacity='.8'%3E%3Ccircle cx='470' cy='120' r='38'/%3E%3C/g%3E%3Cg fill='%23dff2ff' opacity='.6'%3E%3Crect x='52' y='392' width='130' height='9' rx='4.5'/%3E%3Crect x='52' y='416' width='84' height='7' rx='3.5' opacity='.5'/%3E%3C/g%3E%3C/svg%3E" alt="社区作品：江边黄昏与低飞的鸟群">
+          <figcaption>《江边黄昏》· 用户 木木 上传</figcaption>
+        </figure>
+        <figure>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 220'%3E%3Cdefs%3E%3ClinearGradient id='w2' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%232b2011'/%3E%3Cstop offset='1' stop-color='%236b4a1e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='300' height='220' fill='url(%23w2)'/%3E%3Cg fill='%23ffc46b' opacity='.55'%3E%3Ccircle cx='222' cy='70' r='26'/%3E%3C/g%3E%3Cg stroke='%23ffdca8' stroke-opacity='.45' fill='none' stroke-width='2'%3E%3Cpath d='M20 170 Q90 120 160 166 T300 150'/%3E%3C/g%3E%3C/svg%3E" alt="社区作品：清晨窗台上的暖色光斑">
+          <figcaption>《窗台》· 林间</figcaption>
+        </figure>
+        <figure>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 220'%3E%3Cdefs%3E%3ClinearGradient id='w3' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23121a2e'/%3E%3Cstop offset='1' stop-color='%233a4f8a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='300' height='220' fill='url(%23w3)'/%3E%3Cg stroke='%237fd6ff' stroke-opacity='.6' fill='none' stroke-width='1.6'%3E%3Ccircle cx='150' cy='110' r='46'/%3E%3Ccircle cx='150' cy='110' r='68' stroke-opacity='.28'/%3E%3C/g%3E%3Cg fill='%23cfe4ff' opacity='.7'%3E%3Crect x='30' y='176' width='80' height='7' rx='3.5'/%3E%3C/g%3E%3C/svg%3E" alt="社区作品：夜色中的圆形灯光装置">
+          <figcaption>《光圈》· 阿野</figcaption>
+        </figure>
+        <figure class="w-wide">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 220'%3E%3Cdefs%3E%3ClinearGradient id='w4' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231a2a1c'/%3E%3Cstop offset='1' stop-color='%234a6b3d'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='220' fill='url(%23w4)'/%3E%3Cg stroke='%23c9f0a8' stroke-opacity='.45' fill='none' stroke-width='2'%3E%3Cpath d='M0 160 Q80 110 170 152 T400 138'/%3E%3C/g%3E%3Cg fill='%23e6ffcc' opacity='.7'%3E%3Crect x='26' y='40' width='90' height='8' rx='4'/%3E%3C/g%3E%3Cg fill='%23ffd166' opacity='.6'%3E%3Ccircle cx='330' cy='62' r='22'/%3E%3C/g%3E%3C/svg%3E" alt="社区作品：山脊线与初升的太阳">
+          <figcaption>《山脊》· 远行的人</figcaption>
+        </figure>
+        <figure>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 220'%3E%3Cdefs%3E%3ClinearGradient id='w5' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%232a1324'/%3E%3Cstop offset='1' stop-color='%23753a5c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='300' height='220' fill='url(%23w5)'/%3E%3Cg fill='%23ff8fb1' opacity='.5'%3E%3Ccircle cx='206' cy='76' r='34'/%3E%3C/g%3E%3Cg stroke='%23ffd0dc' stroke-opacity='.4' fill='none' stroke-width='1.8'%3E%3Cpath d='M0 178 Q90 138 180 174 T300 158'/%3E%3C/g%3E%3C/svg%3E" alt="社区作品：暮色里的粉色云层">
+          <figcaption>《粉云》· 小满</figcaption>
+        </figure>
+        <figure>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 220'%3E%3Cdefs%3E%3ClinearGradient id='w6' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23091a1c'/%3E%3Cstop offset='1' stop-color='%230f4a4a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='300' height='220' fill='url(%23w6)'/%3E%3Cg stroke='%2300e0a8' stroke-opacity='.55' fill='none' stroke-width='1.8'%3E%3Cpath d='M20 180 L90 120 L150 160 L220 96 L280 146'/%3E%3C/g%3E%3Cg fill='%2300e0a8'%3E%3Ccircle cx='220' cy='96' r='5'/%3E%3C/g%3E%3C/svg%3E" alt="社区作品：夜色中的路径与光点">
+          <figcaption>《路》· 阿迟</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 评价 + 榜单 -->
+  <section class="v1024-sec alt" id="v1024Voice">
+    <div class="v1024-wrap">
+      <div class="v1024-sec-head">
+        <div class="v1024-sec-kicker">VOICE / 社区声音</div>
+        <h2 class="v1024-h2">他们这样评价 1024
+          <small>来自长期用户与创作者的真实反馈，来自不同角度，也来自持续使用的日常。</small>
+        </h2>
+      </div>
+      <div class="v1024-quote-grid">
+        <div class="v1024-quote">
+          <div class="v1024-stars">★★★★★</div>
+          <p>画面很干净，没有多余的干扰，字幕速度也舒服。我经常在晚上挑一支城市系列看完再睡，像读一篇短文章。</p>
+          <div class="v1024-qwho"><span class="v1024-avatar">苏</span><span>苏小舟 · 长期用户</span></div>
+        </div>
+        <div class="v1024-quote">
+          <div class="v1024-stars">★★★★★</div>
+          <p>作为创作者，比较打动我的是这里的选题建议不敷衍。编辑会明确指出哪里节奏慢、哪里的转场多余，这在很多地方很难得。</p>
+          <div class="v1024-qwho"><span class="v1024-avatar v2">陈</span><span>陈一帧 · 创作者</span></div>
+        </div>
+        <div class="v1024-quote">
+          <div class="v1024-stars">★★★★☆</div>
+          <p>内容整体品质不错，专题更新的节奏稳定。希望之后能多一些长片，也希望能开放更多细分标签方便找东西。</p>
+          <div class="v1024-qwho"><span class="v1024-avatar v3">许</span><span>许同学 · 用户</span></div>
+        </div>
+        <div class="v1024-quote">
+          <div class="v1024-stars">★★★★★</div>
+          <p>和我们做企业内容时的需求挺贴合，沟通清楚，授权说明也写得明白，合作过程没有扯皮的地方。</p>
+          <div class="v1024-qwho"><span class="v1024-avatar v4">何</span><span>何经理 · 品牌合作方</span></div>
+        </div>
+        <div class="v1024-quote">
+          <div class="v1024-stars">★★★★☆</div>
+          <p>社区氛围比较温和，评论区很少有攻击性的内容。作品墙的投票机制我挺喜欢，能看到大家真正在选什么。</p>
+          <div class="v1024-qwho"><span class="v1024-avatar v5">林</span><span>林间 · 用户</span></div>
+        </div>
+        <div class="v1024-quote">
+          <div class="v1024-stars">★★★★★</div>
+          <p>投稿流程讲得很细，从分辨率到封装格式都有说明，第一次上传就通过了。帮助中心的问答也基本能解决问题。</p>
+          <div class="v1024-qwho"><span class="v1024-avatar">周</span><span>周舟 · 新入驻创作者</span></div>
+        </div>
+      </div>
+
+      <div class="v1024-rank" style="margin-top:34px">
+        <div class="v1024-rank-col">
+          <h3>本周热度榜</h3>
+          <ul>
+            <li><span class="v1024-rank-no">1</span><span>《城市微光》第二季 01 集</span><em>2.4万</em></li>
+            <li><span class="v1024-rank-no">2</span><span>镜头语言入门：五个办法</span><em>1.9万</em></li>
+            <li><span class="v1024-rank-no">3</span><span>一个人做饭的第七百天</span><em>1.5万</em></li>
+          </ul>
+        </div>
+        <div class="v1024-rank-col">
+          <h3>新人成长榜</h3>
+          <ul>
+            <li><span class="v1024-rank-no">1</span><span>毕业后的第一个短片</span><em>新人</em></li>
+            <li><span class="v1024-rank-no">2</span><span>阳台上的四季记录</span><em>新人</em></li>
+            <li><span class="v1024-rank-no">3</span><span>菜市场的声音采集</span><em>新人</em></li>
+          </ul>
+        </div>
+        <div class="v1024-rank-col">
+          <h3>口碑推荐榜</h3>
+          <ul>
+            <li><span class="v1024-rank-no">1</span><span>对话独立导演：先拍透日常</span><em>9.6 分</em></li>
+            <li><span class="v1024-rank-no">2</span><span>城市绿道实测清单</span><em>9.4 分</em></li>
+            <li><span class="v1024-rank-no">3</span><span>拍之前 · 创作幕后</span><em>9.3 分</em></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 企业动态 + FAQ -->
+  <section class="v1024-sec" id="v1024Dynamics">
+    <div class="v1024-wrap">
+      <div class="v1024-split">
+        <div>
+          <div class="v1024-sec-head">
+            <div class="v1024-sec-kicker">NEWS / 企业动态</div>
+            <h2 class="v1024-h2">官方发布与更新日志</h2>
+          </div>
+          <ul class="v1024-timeline">
+            <li>
+              <time>2026-11-17</time>
+              <h3>1024 影像大赛正式开启报名</h3>
+              <p>面向所有社区创作者，主题为“日常的证据”。投稿截止 12 月 15 日，评审由内容编辑部与特邀创作者共同组成。</p>
+            </li>
+            <li>
+              <time>2026-11-12</time>
+              <h3>创作者中心新版剪辑攻略上线</h3>
+              <p>新增素材管理、调色思路与声音处理三套指南，配套示例工程可下载查看。</p>
+            </li>
+            <li>
+              <time>2026-11-06</time>
+              <h3>专题《城市微光》第二季更新至第 8 集</h3>
+              <p>本季共 10 集，剩余两集将在本月底前陆续发布，支持按集追更与收藏。</p>
+            </li>
+            <li>
+              <time>2026-10-28</time>
+              <h3>1024 与三家内容机构达成合作</h3>
+              <p>围绕原创纪录短片的联合制作与版权合作展开，后续将在专题区上线共创内容。</p>
+            </li>
+            <li>
+              <time>2026-10-15</time>
+              <h3>社区公约 2.0 发布</h3>
+              <p>进一步明确评论规范与举报流程，强化对原创作者的保护与正版内容的标注。</p>
+            </li>
+          </ul>
+        </div>
+
+        <div id="v1024Help">
+          <div class="v1024-sec-head">
+            <div class="v1024-sec-kicker">FAQ / 帮助中心</div>
+            <h2 class="v1024-h2">常见问题</h2>
+          </div>
+          <div class="v1024-faq">
+            <details>
+              <summary>1024 是什么类型的平台？</summary>
+              <p>1024 是一个以原创影像为核心的视频内容品牌与内容社区，提供高清作品的发布、专题企划的连载，以及面向创作者的内容支持与成长机制。这里也是品牌官方网站，企业的公开信息与官方发布都会在本站同步。</p>
+            </details>
+            <details>
+              <summary>如何成为 1024 的入驻创作者？</summary>
+              <p>点击页头的“投稿入口”填写基本信息并上传作品，审核通常在 3 个工作日内完成。通过后可获得创作者中心权限，包括作品管理、数据查看与专题投稿。</p>
+            </details>
+            <details>
+              <summary>投稿对分辨率与格式有什么要求？</summary>
+              <p>建议采用 1080P 及以上分辨率，封装格式为 MP4 或 MOV，音轨保持立体声。若为系列内容，请在投稿时注明集数与更新节奏，便于安排在专题区连载。</p>
+            </details>
+            <details>
+              <summary>影像大赛的报名与评审规则是怎样的？</summary>
+              <p>报名通过创作者中心提交，作品需为本年度原创。评审分为编辑初筛、社区投票与终审三轮，结果会在本站企业动态中公示。</p>
+            </details>
+            <details>
+              <summary>内容版权如何确认与保护？</summary>
+              <p>1024 只收录正版授权或创作者本人原创的作品，并在内容页标注来源。若发现疑似侵权内容，可通过举报入口提交材料，我们会在核实后处理。</p>
+            </details>
+            <details>
+              <summary>可以在 1024 进行企业品牌合作吗？</summary>
+              <p>可以。我们与品牌方围绕纪录短片、专题联名与内容共建展开合作，具体可在联系区发起沟通，我们会说明合作流程与授权边界。</p>
+            </details>
+            <details>
+              <summary>为什么推荐使用高清设备观看？</summary>
+              <p>1024 的多数成片采用高清标准制作，在大屏设备上能更好保留画面细节与声音层次，观看体验更完整。</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 合作 + 联系 -->
+  <section class="v1024-sec alt" id="v1024Contact">
+    <div class="v1024-wrap">
+      <div class="v1024-sec-head">
+        <div class="v1024-sec-kicker">PARTNER / 合作与联系</div>
+        <h2 class="v1024-h2">与 1024 一起做长期的内容
+          <small>我们相信值得信赖的合作来自清晰的分工与稳定的节奏，欢迎各类机构与创作者发起交流。</small>
+        </h2>
+      </div>
+      <div class="v1024-partners">
+        <span class="v1024-partner">城市影像档案馆</span>
+        <span class="v1024-partner">南方独立影展</span>
+        <span class="v1024-partner">拾光影业</span>
+        <span class="v1024-partner">慢生活研究所</span>
+        <span class="v1024-partner">帧率实验室</span>
+        <span class="v1024-partner">社区共创计划</span>
+      </div>
+
+      <div class="v1024-contact">
+        <div>
+          <h2 class="v1024-h2">把你的作品交给社区</h2>
+          <p>无论是第一支短片还是第十个系列，1024 都欢迎你上传与分享。联系我们可了解投稿指南、合作方式与企业定制内容的具体流程。</p>
+        </div>
+        <div class="v1024-contact-acts">
+          <button class="v1024-btn-acc" id="v1024ContactSubmit">提交作品</button>
+          <button class="v1024-btn-ghost" id="v1024ContactShare">分享本站</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="v1024-footer">
+  <div class="v1024-wrap">
+    <div class="v1024-foot-grid">
+      <div class="v1024-foot-brand">
+        <a href="#v1024Home" class="v1024-logo" aria-label="1024 官方网站">
+          <span class="v1024-logo-mark" aria-hidden="true"></span>
+          <span class="v1024-logo-txt">1024<em>官网</em></span>
+        </a>
+        <p>1024 官方网站 · 专注原创高清影像的视频内容品牌，与创作者、企业与社区一起持续运营高品质内容生态。</p>
+        <div class="v1024-foot-social">
+          <button data-share title="分享">微</button>
+          <button data-share title="分享">博</button>
+          <button data-share title="分享">Q</button>
+          <button id="v1024FootCopy" title="复制链接">链</button>
+        </div>
+      </div>
+      <div>
+        <h3>内容频道</h3>
+        <ul>
+          <li><a href="#v1024Focus">焦点内容</a></li>
+          <li><a href="#v1024Stream">热门视频流</a></li>
+          <li><a href="#v1024Topics">专题企划</a></li>
+          <li><a href="#v1024Wall">作品墙</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>关于品牌</h3>
+        <ul>
+          <li><a href="#v1024Story">品牌故事</a></li>
+          <li><a href="#v1024Creators">创作者矩阵</a></li>
+          <li><a href="#v1024Dynamics">企业动态</a></li>
+          <li><a href="#v1024Voice">社区声音</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>支持与合作</h3>
+        <ul>
+          <li><a href="#v1024Help">帮助中心</a></li>
+          <li><a href="#v1024Contact">商务合作</a></li>
+          <li><a href="#v1024Contact">投稿指南</a></li>
+          <li><a href="#v1024Contact">意见反馈</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="v1024-foot-bottom">
+      <span>© 2026 1024 视频品牌 版权所有 · 原创内容受版权保护</span>
+      <span>持续运营中 · 官方发布 · 用户至上</span>
+    </div>
+  </div>
+</footer>
+
+<button class="v1024-top-btn" id="v1024TopBtn" aria-label="回到顶部">↑</button>
+<div class="v1024-toast" id="v1024Toast" role="status" aria-live="polite"></div>
+
+<!-- 通用弹窗 -->
+<div class="v1024-modal" id="v1024Modal">
+  <div class="v1024-modal-box">
+    <button class="v1024-modal-close" id="v1024ModalClose" aria-label="关闭">×</button>
+    <h3 id="v1024ModalTitle">标题</h3>
+    <p id="v1024ModalDesc">描述</p>
+    <div id="v1024ModalBody"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var notice = document.getElementById('v1024Notice');
+  var noticeClose = document.getElementById('v1024NoticeClose');
+  var header = document.querySelector('.v1024-header');
+  var burger = document.getElementById('v1024Burger');
+  var nav = document.getElementById('v1024Nav');
+  var search = document.getElementById('v1024Search');
+  var tabs = document.getElementById('v1024Tabs');
+  var vgrid = document.getElementById('v1024VGrid');
+  var topBtn = document.getElementById('v1024TopBtn');
+  var toast = document.getElementById('v1024Toast');
+  var modal = document.getElementById('v1024Modal');
+  var modalTitle = document.getElementById('v1024ModalTitle');
+  var modalDesc = document.getElementById('v1024ModalDesc');
+  var modalBody = document.getElementById('v1024ModalBody');
+  var modalClose = document.getElementById('v1024ModalClose');
+  var toastTimer;
+
+  /* 公告关闭 */
+  if(noticeClose){
+    noticeClose.addEventListener('click', function(){
+      notice.style.display = 'none';
+      document.documentElement.style.scrollPaddingTop = '70px';
+    });
+  }
+
+  /* Toast */
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add('is-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('is-show'); }, 2300);
+  }
+
+  /* 移动端导航 */
+  burger.addEventListener('click', function(){
+    var open = nav.classList.toggle('is-open');
+    burger.classList.toggle('is-open', open);
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      nav.classList.remove('is-open');
+      burger.classList.remove('is-open');
+      burger.setAttribute('aria-expanded','false');
+    });
+  });
+
+  /* 搜索反馈 */
+  search.addEventListener('input', function(){
+    var q = search.value.trim().toLowerCase();
+    var cards = vgrid.querySelectorAll('.v1024-card');
+    var hit = 0;
+    cards.forEach(function(card){
+      var txt = card.textContent.toLowerCase();
+      var match = !q || txt.indexOf(q) !== -1;
+      card.style.display = match ? '' : 'none';
+      if(match) hit++;
+    });
+    if(q){
+      if(hit === 0){ showToast('没有找到「' + search.value.trim() + '」相关的内容，换个关键词试试'); }
+      else { showToast('为你找到 ' + hit + ' 条相关内容'); }
+    }
+  });
+  search.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){
+      e.preventDefault();
+      document.getElementById('v1024Stream').scrollIntoView({behavior:'smooth'});
+    }
+  });
+
+  /* 标签筛选 */
+  tabs.addEventListener('click', function(e){
+    var btn = e.target.closest('.v1024-tab');
+    if(!btn) return;
+    tabs.querySelectorAll('.v1024-tab').forEach(function(b){ b.classList.remove('is-active'); });
+    btn.classList.add('is-active');
+    var filter = btn.getAttribute('data-filter');
+    vgrid.querySelectorAll('.v1024-card').forEach(function(card){
+      var ok = filter === 'all' || card.getAttribute('data-cat') === filter;
+      card.style.display = ok ? '' : 'none';
+    });
+    if(search.value.trim() !== '') search.value = '';
+  });
+
+  /* 弹窗控制 */
+  function openModal(title, desc, bodyHTML){
+    modalTitle.textContent = title;
+    modalDesc.textContent = desc || '';
+    modalBody.innerHTML = bodyHTML || '';
+    modal.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(){
+    modal.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+  modalClose.addEventListener('click', closeModal);
+  modal.addEventListener('click', function(e){
+    if(e.target === modal) closeModal();
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') closeModal();
+  });
+
+  /* 点赞 / 收藏 / 分享 */
+  vgrid.addEventListener('click', function(e){
+    var likeBtn = e.target.closest('[data-like]');
+    var saveBtn = e.target.closest('[data-save]');
+    var shareBtn = e.target.closest('[data-share]');
+    if(likeBtn){
+      var liked = likeBtn.classList.toggle('is-liked');
+      var text = likeBtn.textContent.replace('♡ ','').replace('♥ ','').replace(/,/g,'');
+      var num = parseInt(text, 10) || 0;
+      num = liked ? num + 1 : Math.max(0, num - 1);
+      likeBtn.textContent = (liked ? '♥ ' : '♡ ') + num.toLocaleString('en-US');
+      showToast(liked ? '已点赞，感谢支持' : '已取消点赞');
+    }
+    if(saveBtn){
+      var saved = saveBtn.classList.toggle('is-saved');
+      saveBtn.textContent = saved ? '★' : '☆';
+      showToast(saved ? '已收藏到你的片单' : '已取消收藏');
+    }
+    if(shareBtn){
+      var card = shareBtn.closest('.v1024-card');
+      var title = card ? card.querySelector('h3').textContent : '1024 官方网站';
+      openShare(title);
+    }
+  });
+
+  function openShare(title){
+    openModal('分享「' + title + '」', '选择分享渠道，把这条内容带给更多同好。', 
+      '<div class="v1024-share-row">' +
+      '<button data-share-to="微信">微信</button>' +
+      '<button data-share-to="微博">微博</button>' +
+      '<button data-share-to="QQ">QQ</button>' +
+      '<button data-share-to="复制链接">复制链接</button>' +
+      '</div>');
+  }
+
+  modalBody.addEventListener('click', function(e){
+    var btn = e.target.closest('[data-share-to]');
+    if(!btn) return;
+    var to = btn.getAttribute('data-share-to');
+    if(to === '复制链接'){
+      copyLink();
+    } else {
+      showToast('已生成' + to + '分享卡片，可粘贴发送');
+      closeModal();
+    }
+  });
+
+  function copyLink(){
+    var text = '1024 官方网站 · 原创高清影像内容';
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){
+        showToast('链接已复制，可分享给朋友');
+        closeModal();
+      }).catch(function(){
+        showToast('复制失败，请手动选择链接');
+      });
+    } else {
+      showToast('当前环境不支持复制，请手动选择链接');
+    }
+  }
+
+  /* 作者信息弹窗 */
+  document.querySelectorAll('.v1024-creator').forEach(function(c){
+    c.addEventListener('click', function(){
+      var name = c.getAttribute('data-creator');
+      var field = c.querySelector('.v1024-field').textContent;
+      var bio = c.querySelector('p').textContent;
+      var data = c.querySelectorAll('.v1024-creator-data b');
+      openModal(name, field + ' · 1024 入驻创作者',
+        '<p style="font-size:13px;color:#a8b6cf;line-height:1.85;margin-bottom:14px">' + bio + '</p>' +
+        '<p style="font-size:12.5px;color:#7f8ea9">作品 ' + (data[0] ? data[0].textContent : '—') +
+        ' · 关注 ' + (data[1] ? data[1].textContent : '—') + '</p>');
+    });
+  });
+
+  /* 投稿入口 */
+  function openSubmit(){
+    openModal('创作者投稿入口', '填写基本信息并上传作品，审核通常在 3 个工作日内完成。',
+      '<label>创作者昵称</label><input type="text" placeholder="例如：拾光记录">' +
+      '<label>作品标题</label><input type="text" placeholder="例如：城市微光 第二季 01 集">' +
+      '<label>内容简介</label><textarea rows="3" placeholder="简单描述作品内容与拍摄思路"></textarea>' +
+      '<button class="v1024-btn-acc" id="v1024SubmitConfirm" style="width:100%">提交作品</button>');
+  }
+  document.getElementById('v1024SubmitBtn').addEventListener('click', openSubmit);
+  document.getElementById('v1024ContactSubmit').addEventListener('click', openSubmit);
+  modalBody.addEventListener('click', function(e){
+    if(e.target && e.target.id === 'v1024SubmitConfirm'){
+      showToast('作品信息已提交，我们会尽快与你联系');
+      closeModal();
+    }
+  });
+
+  /* 分享本站 / 复制 */
+  document.getElementById('v1024ContactShare').addEventListener('click', function(){
+    openShare('1024 官方网站');
+  });
+  document.getElementById('v1024HeroPlay').addEventListener('click', function(){
+    showToast('品牌形象片即将播放：4K 高清 · 时长 3:24');
+  });
+  document.getElementById('v1024HeroPlay').addEventListener('keydown', function(e){
+    if(e.key === 'Enter' || e.key === ' '){
+      e.preventDefault();
+      showToast('品牌形象片即将播放：4K 高清 · 时长 3:24');
+    }
+  });
+  document.getElementById('v1024FootCopy').addEventListener('click', copyLink);
+  document.querySelectorAll('.v1024-foot-social [data-share]').forEach(function(b){
+    b.addEventListener('click', function(){
+      openShare('1024 官方网站');
+    });
+  });
+
+  /* 回到顶部 */
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 480){ topBtn.classList.add('is-show'); }
+    else { topBtn.classList.remove('is-show'); }
+  }, {passive:true});
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* 导航高亮 */
+  var sections = ['v1024Home','v1024Focus','v1024Stream','v1024Topics','v1024Creators','v1024Dynamics','v1024Help','v1024Contact'];
+  var navLinks = nav.querySelectorAll('a');
+  window.addEventListener('scroll', function(){
+    var pos = window.scrollY + 140;
+    var current = sections[0];
+    sections.forEach(function(id){
+      var el = document.getElementById(id);
+      if(el && el.offsetTop <= pos) current = id;
+    });
+    navLinks.forEach(function(a){
+      a.classList.toggle('is-active', a.getAttribute('href') === '#' + current);
+    });
+  }, {passive:true});
+
+  /* 公告轻微轮播提示 */
+  var noticeTrack = document.querySelector('.v1024-notice-track');
+  if(noticeTrack){
+    var messages = [
+      '新增 <b>「城市微光」第二季</b> 4 支正片已上线 · <b>1024 影像大赛报名</b> 开启至 12 月 15 日 · 创作者中心新版剪辑攻略已发布',
+      '<b>本周专题更新</b>：拍之前 · 创作幕后 第 06 期已发布 · 社区作品墙投票通道已开启',
+      '<b>官方发布</b>：社区公约 2.0 上线 · 创作者投稿指南更新 · 合作咨询请通过联系入口发起'
+    ];
+    var mi = 0;
+    setInterval(function(){
+      mi = (mi + 1) % messages.length;
+      noticeTrack.style.opacity = '0';
+      setTimeout(function(){
+        noticeTrack.innerHTML = messages[mi];
+        noticeTrack.style.opacity = '1';
+      }, 260);
+    }, 6200);
+    noticeTrack.style.transition = 'opacity .26s';
+  }
+})();
+</script>
+</body>
+  </html>
